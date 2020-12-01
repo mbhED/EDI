@@ -1,0 +1,130 @@
+<!-- https://monicaaeortiz.github.io/EDI/HTML_intro/index.html-->
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto&display=swap" rel="stylesheet">
+
+   <title>3D Extrusion Car Reflection</title>
+
+   <style>
+   body{
+     background-color: Gainsboro;
+     padding: 30px;
+     margin: 20px;
+   }
+
+   h1, h2{
+     color: MediumBlue;
+     font-family: 'Castoro', sans-serif;
+   }
+
+   h3{
+     color: red;
+     font-family: 'Castoro', sans-serif;
+   }
+
+   p, ul{
+     font-family: 'Roboto', serif;
+   }
+   </style>
+
+</head>
+
+<body>
+  <h1>3D Extrusion Car Reflection</h1> <!--goes from h1 to h6 - h1 = biggest, h6 = smallest-->
+  <p><i>For this project we modeled and 3D printed a toy car.
+    The goal of the project was to accurately represent the toy car.
+    We worked in X, Y and Z planes to create the final 3D form.</i></p>
+  <h2>Guidelines</h2>
+  <ul>
+    <li>Car designed as an intersection of three forms</li>
+    <li>Design car in a 1:1 ratio</li>
+    <li>Size accuracy ±1%</li>
+    <li>Design is exported as stl</li>
+    <li>Student orients model in Cura for 3D printing to minimize support material</li>
+    <li>File is exported as a gcode</li>
+    <li>Final design is shared out as an embedded STL on an HTML webpage</li>
+  </ul>
+
+  <h2>Project Steps</h2>
+  <h3>Drawing:</h3>
+  <ul>
+    <li>Draw car to scale as an Engineering Drawing</li>
+    <li>Scan/photograph drawing</li>
+    <li>Capture screenshots of each plane side</li>
+  </ul>
+
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/Engineering%20Drawing.jpg" alt = "Engineering Drawing" style = "width:50%">
+    <figcaption>Engineering Drawing</figcaption>
+  </figure>
+
+  <h3>3D Modeling:</h3>
+  <ul>
+    <li>Draw each profile on each plane side using your engineering drawing</li>
+    <li>Use the extrusion tool to remove the negative spaces from the 3D form</li>
+    <li>Export as an STL file</li>
+  </ul>
+
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/3D%20Envelope.jpg" alt = "3D Envelope" style = "width:50%">
+    <figcaption>3D Envelope</figcaption>
+  </figure>
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/Drawing%20Profile.jpg" alt = "Drawing Profile" style = "width:50%">
+    <figcaption>Drawing Profile</figcaption>
+  </figure>
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/Removal%20of%20Negative%20Space.jpg" alt = "Removal of Negative Space" style = "width:50%">
+    <figcaption>Removal of Negative Space</figcaption>
+  </figure>
+
+  <h3>Slicing and Printing:</h3>
+  <ul>
+    <li>Import design into Cura to make any final scaling changes</li>
+    <li>Position 3D model on build plate to minimize support martial</li>
+    <li>Set nozzle to 0.6 mm</li>
+    <li>Export as a GCODE file</li>
+    <li>Print model using the 3D printer</li>
+  </ul>
+
+  <h3>Documentation:</h3>
+  <ul>
+    <li>Create CAD drawing with margin of error analysis</li>
+    <li>Import design to Modelo to make a 3D model</li>
+    <li>Create a reflection using an HTML document with blurb and 3D render</li>
+  </ul>
+
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/CAD%20drawing.jpg" alt = "CAD Drawing" style = "width:50%">
+    <figcaption>CAD Drawing</figcaption>
+  </figure>
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/Final%20Car.jpg" alt = "Final Car v. Toy Car" style = "width:50%">
+    <figcaption>Final Car v. Toy Car</figcaption>
+  </figure>
+
+  <h2>Setbacks and Solutions</h2>
+  <p>One setback occurred while creating my reflection. I included the url of the image but it had the wrong tag so it did not load on the website.
+    To fix this I re-uploaded the pictures onto Github, making sure they were jpgs and not pdfs.</p>
+
+  <p>Another setback I encountered was that my engineering drawing did not fit correctly inside my box at the beginning of the 3D Modeling process.
+    The X and Y planes were much shorter than the length of the box, and the Z plane was too thin.
+  </p>
+  <figure>
+    <img src = "https://raw.githubusercontent.com/mbhED/EDI/master/3D%20Extrusion%20Car/3D%20Envelope.jpg" alt = "3D Envelope" style = "width:50%">
+    <figcaption>3D Envelope</figcaption>
+  </figure>
+  <p>To fix this problem, I only traced half the profile of the Z plane in Onshape and mirrored it over the center to make it the correct width.
+    However, I could not mirror the other two planes because the sides were not symmetrical.
+    My lines on my engineering drawing were too thick, so I did not know exactly where on the line to trace in Onshape.
+    Using a ruler and only drawing one line instead of making the lines dark and going over them would have reduced the margin of error because the Engineering Drawing would have been more accurate.</p>
+
+<h2>Final 3D Model</h2>
+<div class='modelo-wrapper'> <div style="width: 100%; padding-bottom: 56.25%; position: relative"> <div style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"> <iframe src="https://app.modelo.io/embedded/sijOHQyZXC?viewport=true&autoplay=true&autoRotate=true&hideTools=true" style="width:100%;height:100%;" frameborder="0" mozallowfullscreen webkitallowfullscreen allowfullscreen ></iframe> </div> </div> </div>
+</body>
+
+</html>
